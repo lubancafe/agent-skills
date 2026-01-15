@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Start Agency - Digital Design Partner</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Geist', 'sans-serif'] },
+          colors: {
+            neutral: {
+              50: '#fafafa', 100: '#f5f5f5', 200: '#e5e5e5', 300: '#d4d4d4',
+              400: '#a3a3a3', 500: '#737373', 600: '#525252', 700: '#404040',
+              800: '#262626', 900: '#171717'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    .glass-panel {
+      background: rgba(255, 255, 255, 0.4);
+      backdrop-filter: blur(24px);
+      border: 1px solid rgba(255, 255, 255, 0.5);
+    }
+    .grid-lines {
+      background-size: 20% 100%;
+      background-image: linear-gradient(to right, rgba(0,0,0,0.03) 1px, transparent 1px);
+    }
+  </style>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&display=swap">
+</head>
+<body class="min-h-screen overflow-x-hidden text-neutral-900 bg-neutral-100 relative">
+  <div class="fixed grid-lines w-full h-full top-0 left-0"></div>
+
+  <div class="relative z-10 flex flex-col lg:flex-row min-h-screen max-w-[1600px] mx-auto">
+    <!-- Sidebar -->
+    <aside class="lg:w-64 lg:fixed lg:h-screen flex flex-col z-50 glass-panel lg:bg-transparent lg:backdrop-blur-none lg:border-none w-full border-neutral-200/50 border-b p-8 justify-between">
+      <div>
+        <div class="mb-12">
+          <a href="#" class="block text-3xl tracking-tighter font-medium group">
+            start<span class="text-neutral-400 group-hover:text-neutral-900 transition-colors">.agency</span>
+          </a>
+        </div>
+        <nav class="space-y-4">
+          <a href="#" class="block text-lg text-neutral-900 font-medium hover:translate-x-1 transition-transform">Home</a>
+          <a href="#" class="block text-lg text-neutral-500 hover:text-neutral-900 hover:translate-x-1 transition-all">Work</a>
+          <a href="#" class="block text-lg text-neutral-500 hover:text-neutral-900 hover:translate-x-1 transition-all">Services</a>
+          <a href="#" class="block text-lg text-neutral-500 hover:text-neutral-900 hover:translate-x-1 transition-all">Pricing</a>
+          <a href="#" class="block text-lg text-neutral-500 hover:text-neutral-900 hover:translate-x-1 transition-all">Contact</a>
+        </nav>
+      </div>
+      <div class="hidden lg:block space-y-2">
+        <div class="flex items-center gap-2 mb-4">
+          <img src="https://ui-avatars.com/api/?name=Start+Agency&background=random&color=fff" alt="User" class="w-8 h-8 rounded-full opacity-80">
+          <div class="text-sm leading-tight">
+            <p class="font-medium text-neutral-900">start.agency</p>
+            <p class="text-neutral-500">@startagency</p>
+          </div>
+        </div>
+        <p class="text-xs text-neutral-400">Template designed by Francois Savard from END Agency.</p>
+      </div>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="flex-1 lg:ml-64 lg:p-16 flex flex-col gap-20 lg:gap-12 overflow-hidden p-6">
+      <!-- Hero Section -->
+      <section class="grid grid-cols-1 lg:grid-cols-12 gap-12 pt-10">
+        <div class="lg:col-span-7 pb-4 space-y-8">
+          <h1 class="leading-[0.95] lg:text-7xl text-5xl font-medium text-neutral-900 tracking-tight">
+            Design partner for startups that move fast and ship right.
+          </h1>
+          <p class="leading-snug lg:text-base text-xl text-neutral-500">
+            We help founders turn messy ideas into products people actually use.
+            Product, brand, and web design. One team. Zero friction.
+          </p>
+          <button class="bg-white/80 backdrop-blur px-6 py-3.5 rounded-full font-medium text-neutral-800 shadow-lg hover:shadow-xl transition-shadow">
+            Design with us
+          </button>
+
+          <!-- Trusted By -->
+          <section class="w-full my-6 space-y-2">
+            <p class="text-base text-neutral-500">Trusted by startups that raised millions and globally recognized brands</p>
+            <div class="flex flex-wrap gap-4 py-4">
+              <div class="glass-panel w-32 h-16 rounded-xl flex items-center justify-center grayscale hover:grayscale-0 transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="24" viewBox="0 0 24 24" class="opacity-80"><path fill="currentColor" d="m12 1.608l12 20.784H0Z"/></svg>
+              </div>
+              <div class="glass-panel w-32 h-16 rounded-xl flex items-center justify-center grayscale hover:grayscale-0 transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="24" viewBox="0 0 24 24" class="opacity-80"><path fill="currentColor" d="M13.976 9.15c-2.172-.806-3.356-1.426-3.356-2.409c0-.831.683-1.305 1.901-1.305c2.227 0 4.515.858 6.09 1.631l.89-5.494C18.252.975 15.697 0 12.165 0C9.667 0 7.589.654 6.104 1.872C4.56 3.147 3.757 4.992 3.757 7.218c0 4.039 2.467 5.76 6.476 7.219c2.585.92 3.445 1.574 3.445 2.583c0 .98-.84 1.545-2.354 1.545c-1.875 0-4.965-.921-6.99-2.109l-.9 5.555C5.175 22.99 8.385 24 11.714 24c2.641 0 4.843-.624 6.328-1.813c1.664-1.305 2.525-3.236 2.525-5.732c0-4.128-2.524-5.851-6.594-7.305z"/></svg>
+              </div>
+              <div class="glass-panel w-32 h-16 rounded-xl flex items-center justify-center grayscale hover:grayscale-0 transition-all">
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" height="24" viewBox="0 0 24 24" class="opacity-80"><path fill="currentColor" d="M4.459 4.208c.746.606 1.026.56 2.428.466l13.215-.793c.28 0 .047-.28-.046-.326L17.86 1.968c-.42-.326-.981-.7-2.055-.607L3.01 2.295c-.466.046-.56.28-.374.466zm.793 3.08v13.904c0 .747.373 1.027 1.214.98l14.523-.84c.841-.046.935-.56.935-1.167V6.354c0-.606-.233-.933-.748-.887l-15.177.887c-.56.047-.747.327-.747.933z"/></svg>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <div class="lg:col-span-4 flex flex-col bg-stone-50 border-stone-200 border rounded-3xl p-2 space-y-4">
+          <div class="aspect-video w-full border-stone-200 border rounded-2xl bg-gradient-to-br from-neutral-100 to-neutral-200 flex items-center justify-center">
+            <span class="text-neutral-400">Video Preview</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Work -->
+      <section class="w-full pt-12 pb-12 relative">
+        <div class="flex mb-12 px-2 items-end justify-between">
+          <h2 class="lg:text-5xl text-4xl font-medium text-neutral-900 tracking-tight">Featured Work</h2>
+          <div class="flex gap-4">
+            <button class="w-12 h-12 rounded-full border border-neutral-300 flex items-center justify-center hover:bg-white transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M20 12H4m0 0l6-6m-6 6l6 6"/></svg>
+            </button>
+            <button class="w-12 h-12 rounded-full border border-neutral-300 flex items-center justify-center hover:bg-white transition-colors">
+              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 12h16m0 0l-6-6m6 6l-6 6"/></svg>
+            </button>
+          </div>
+        </div>
+
+        <div class="flex gap-4 overflow-x-auto pb-4">
+          <!-- Card 1 -->
+          <div class="min-w-[80%] lg:min-w-[60%] glass-panel rounded-3xl p-2">
+            <div class="w-full h-[400px] bg-neutral-50 rounded-2xl overflow-hidden relative">
+              <div class="absolute top-6 left-6 z-20">
+                <span class="bg-white/80 backdrop-blur px-3 py-1 rounded-full text-xs font-medium border border-black/5">Fintech Dashboard</span>
+              </div>
+              <div class="flex bg-gradient-to-br from-neutral-100 to-neutral-200 w-full h-full items-center justify-center">
+                <div class="bg-white w-[80%] h-[70%] bg-cover border-neutral-100 border rounded-xl shadow-2xl"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Card 2 -->
+          <div class="min-w-[80%] lg:min-w-[60%] glass-panel rounded-3xl p-2">
+            <div class="w-full h-[400px] bg-neutral-50 rounded-2xl overflow-hidden relative">
+              <div class="absolute top-6 left-6 z-20">
+                <span class="bg-white/80 backdrop-blur px-3 py-1 rounded-full text-xs font-medium border border-black/5">Mobile Health App</span>
+              </div>
+              <div class="flex bg-gradient-to-bl from-blue-50 to-neutral-100 w-full h-full items-center justify-center">
+                <div class="bg-white w-[40%] h-[80%] bg-cover border-neutral-100 border rounded-xl shadow-2xl"></div>
+              </div>
+            </div>
+          </div>
+          <!-- Card 3 -->
+          <div class="min-w-[80%] lg:min-w-[60%] glass-panel rounded-3xl p-2">
+            <div class="w-full h-[400px] bg-neutral-50 rounded-2xl overflow-hidden relative">
+              <div class="absolute top-6 left-6 z-20">
+                <span class="bg-white/80 backdrop-blur px-3 py-1 rounded-full text-xs font-medium border border-black/5">SaaS Analytics</span>
+              </div>
+              <div class="flex bg-gradient-to-tr from-orange-50 to-neutral-100 w-full h-full items-center justify-center">
+                <div class="bg-white w-[80%] h-[70%] bg-cover border-neutral-100 border rounded-xl shadow-2xl"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Metrics -->
+      <section class="w-full pt-12 pb-12">
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 bg-stone-50 border-stone-200 border rounded-3xl p-2 gap-2">
+          <div class="bg-white p-6 rounded-2xl border border-neutral-200/60 hover:shadow-md transition-shadow">
+            <h3 class="text-2xl font-medium text-neutral-900 tracking-tight mb-2">10 years</h3>
+            <p class="text-[15px] text-neutral-500">Designing inside real startups, not from the outside.</p>
+          </div>
+          <div class="bg-white p-6 rounded-2xl border border-neutral-200/60 hover:shadow-md transition-shadow">
+            <h3 class="text-2xl font-medium text-neutral-900 tracking-tight mb-2">300+ websites</h3>
+            <p class="text-[15px] text-neutral-500">SaaS, fintech, AI, consumer, B2B.</p>
+          </div>
+          <div class="bg-white p-6 rounded-2xl border border-neutral-200/60 hover:shadow-md transition-shadow">
+            <h3 class="text-2xl font-medium text-neutral-900 tracking-tight mb-2">$10 mil value</h3>
+            <p class="text-[15px] text-neutral-500">Across companies we've helped design and launch.</p>
+          </div>
+          <div class="bg-white p-6 rounded-2xl border border-neutral-200/60 hover:shadow-md transition-shadow">
+            <h3 class="text-2xl font-medium text-neutral-900 tracking-tight mb-2">80% clients return</h3>
+            <p class="text-[15px] text-neutral-500">Because good collaboration beats good decks.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Link to other sections -->
+      <div class="text-center py-8">
+        <p class="text-neutral-500 mb-4">Continue to:</p>
+        <div class="flex gap-4 justify-center">
+          <a href="webreference-services.html" class="px-6 py-3 bg-neutral-900 text-white rounded-full hover:bg-neutral-800 transition-colors">Services & Pricing</a>
+          <a href="webreference-footer.html" class="px-6 py-3 border border-neutral-300 rounded-full hover:bg-white transition-colors">Testimonials & FAQ</a>
+        </div>
+      </div>
+    </main>
+  </div>
+</body>
+</html>

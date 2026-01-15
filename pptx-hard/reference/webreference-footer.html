@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Start Agency - Testimonials & Contact</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: { sans: ['Geist', 'sans-serif'] },
+          colors: {
+            neutral: {
+              50: '#fafafa', 100: '#f5f5f5', 200: '#e5e5e5', 300: '#d4d4d4',
+              400: '#a3a3a3', 500: '#737373', 600: '#525252', 700: '#404040',
+              800: '#262626', 900: '#171717'
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Geist:wght@300;400;500;600;700&display=swap">
+</head>
+<body class="min-h-screen overflow-x-hidden text-neutral-900 bg-neutral-100">
+  <div class="max-w-6xl mx-auto px-6 py-12">
+    <!-- Navigation -->
+    <nav class="mb-12">
+      <a href="webreference-min.html" class="text-neutral-500 hover:text-neutral-900 transition-colors">&larr; Back to Home</a>
+    </nav>
+
+    <!-- Testimonials -->
+    <section class="bg-white w-full border-neutral-200/70 border rounded-3xl p-6 mb-12 shadow-lg">
+      <div class="flex flex-col gap-2 mb-8">
+        <h2 class="text-4xl lg:text-5xl text-black tracking-tighter">Testimonials.</h2>
+        <p class="text-sm text-zinc-400">Real stories, real success. Our customers have experienced firsthand the impact of our AI-powered solutions.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Card 1 -->
+        <article class="bg-white border border-neutral-200/70 rounded-[24px] p-8 shadow-md hover:shadow-lg transition-shadow">
+          <p class="text-lg text-neutral-900 tracking-tight mb-6">
+            "FlowAI transformed our content strategy. We now generate 10x more content while maintaining quality."
+          </p>
+          <div class="flex items-center gap-3">
+            <img src="https://images.unsplash.com/photo-1502685104226-ee32379fefbe?q=80&w=200&h=200&fit=crop&crop=faces" alt="Sarah Chen" class="w-10 h-10 rounded-xl object-cover">
+            <div>
+              <div class="text-sm">Sarah Chen</div>
+              <div class="text-xs text-neutral-500">Marketing Director, TechFlow</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="bg-white border border-neutral-200/70 rounded-[24px] p-8 shadow-md hover:shadow-lg transition-shadow">
+          <p class="text-lg text-neutral-900 tracking-tight mb-6">
+            "The AI automation saved us 20+ hours weekly. Our content performance increased by 300%."
+          </p>
+          <div class="flex items-center gap-3">
+            <img src="https://images.unsplash.com/photo-1547425260-76bcadfb4f2c?q=80&w=200&h=200&fit=crop&crop=faces" alt="Marcus Rodriguez" class="w-10 h-10 rounded-xl object-cover">
+            <div>
+              <div class="text-sm">Marcus Rodriguez</div>
+              <div class="text-xs text-neutral-500">Content Lead, GrowthLab</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="bg-white border border-neutral-200/70 rounded-[24px] p-8 shadow-md hover:shadow-lg transition-shadow">
+          <p class="text-lg text-neutral-900 tracking-tight mb-6">
+            "Incredible ROI. FlowAI paid for itself within the first month of implementation."
+          </p>
+          <div class="flex items-center gap-3">
+            <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=200&h=200&fit=crop&crop=faces" alt="Emma Thompson" class="w-10 h-10 rounded-xl object-cover">
+            <div>
+              <div class="text-sm">Emma Thompson</div>
+              <div class="text-xs text-neutral-500">Founder, Digital Ventures</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="bg-white border border-neutral-200/70 rounded-[24px] p-8 shadow-md hover:shadow-lg transition-shadow">
+          <p class="text-lg text-neutral-900 tracking-tight mb-6">
+            "From brief to published content in minutes - completely game-changing for our workflow."
+          </p>
+          <div class="flex items-center gap-3">
+            <img src="https://images.unsplash.com/photo-1531123897727-8f129e1688ce?q=80&w=200&h=200&fit=crop&crop=faces" alt="Alex Morgan" class="w-10 h-10 rounded-xl object-cover">
+            <div>
+              <div class="text-sm">Alex Morgan</div>
+              <div class="text-xs text-neutral-500">Creative Director, Apex Studios</div>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="bg-white border border-neutral-200/70 rounded-[24px] p-8 shadow-md hover:shadow-lg transition-shadow md:col-span-2 lg:col-span-2">
+          <p class="text-lg text-neutral-900 tracking-tight mb-6">
+            "The analytics and multi-channel distribution features are phenomenal. Best investment we made."
+          </p>
+          <div class="flex items-center gap-3">
+            <img src="https://images.unsplash.com/photo-1527980965255-d3b416303d12?q=80&w=200&h=200&fit=crop&crop=faces" alt="Priya Patel" class="w-10 h-10 rounded-xl object-cover">
+            <div>
+              <div class="text-sm">Priya Patel</div>
+              <div class="text-xs text-neutral-500">Head of Marketing, InnovateCorp</div>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="mb-12">
+      <div class="grid lg:grid-cols-12 gap-8">
+        <div class="lg:col-span-4 space-y-6">
+          <h2 class="text-3xl lg:text-4xl font-medium tracking-tight text-neutral-900">
+            Frequently Asked Questions
+          </h2>
+          <p class="text-[17px] text-neutral-500">
+            Everything you need to know about the product and billing. Can't find the answer you're looking for? Please
+            <a href="#" class="underline underline-offset-4 text-neutral-900 hover:text-neutral-600 transition-colors">chat to our friendly team</a>.
+          </p>
+        </div>
+        <div class="lg:col-span-8">
+          <div class="bg-stone-50 border border-stone-200 rounded-3xl p-2 flex flex-col gap-2">
+            <!-- FAQ Item 1 -->
+            <details class="bg-white border border-neutral-200/60 rounded-2xl group">
+              <summary class="p-6 cursor-pointer list-none flex justify-between items-center hover:bg-neutral-50 rounded-2xl transition-colors">
+                <h3 class="text-base font-medium text-neutral-900">How does the "pause" feature work?</h3>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="text-neutral-400 transition-transform group-open:rotate-180">
+                  <path d="m6 9 6 6 6-6"/>
+                </svg>
+              </summary>
+              <div class="px-6 pb-6 text-neutral-500 text-[15px]">
+                We understand you might not have enough design work to fill up an entire month. Perhaps you only have one or two requests at the moment. That's where pausing your subscription comes in handy. Billing cycles are based on a 31 day period.
+              </div>
+            </details>
+
+            <!-- FAQ Item 2 -->
+            <details class="bg-white border border-neutral-200/60 rounded-2xl group">
+              <summary class="p-6 cursor-pointer list-none flex justify-between items-center hover:bg-neutral-50 rounded-2xl transition-colors">
+                <h3 class="text-base font-medium text-neutral-900">What is the typical turnaround time?</h3>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="text-neutral-400 transition-transform group-open:rotate-180">
+                  <path d="m6 9 6 6 6-6"/>
+                </svg>
+              </summary>
+              <div class="px-6 pb-6 text-neutral-500 text-[15px]">
+                On average, most requests are completed in just two days or less. However, more complex requests can take longer.
+              </div>
+            </details>
+
+            <!-- FAQ Item 3 -->
+            <details class="bg-white border border-neutral-200/60 rounded-2xl group">
+              <summary class="p-6 cursor-pointer list-none flex justify-between items-center hover:bg-neutral-50 rounded-2xl transition-colors">
+                <h3 class="text-base font-medium text-neutral-900">Do you offer development services?</h3>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="text-neutral-400 transition-transform group-open:rotate-180">
+                  <path d="m6 9 6 6 6-6"/>
+                </svg>
+              </summary>
+              <div class="px-6 pb-6 text-neutral-500 text-[15px]">
+                Yes! We offer Webflow and Framer development as part of our package. Custom coding is available upon request.
+              </div>
+            </details>
+
+            <!-- FAQ Item 4 -->
+            <details class="bg-white border border-neutral-200/60 rounded-2xl group">
+              <summary class="p-6 cursor-pointer list-none flex justify-between items-center hover:bg-neutral-50 rounded-2xl transition-colors">
+                <h3 class="text-base font-medium text-neutral-900">How do we communicate?</h3>
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" class="text-neutral-400 transition-transform group-open:rotate-180">
+                  <path d="m6 9 6 6 6-6"/>
+                </svg>
+              </summary>
+              <div class="px-6 pb-6 text-neutral-500 text-[15px]">
+                We use a private Slack channel for day-to-day communication and Trello for task management. We also offer optional bi-weekly sync calls.
+              </div>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="pt-0 pb-0">
+      <div class="bg-white border-neutral-200 border rounded-3xl p-6 lg:p-10 shadow-lg">
+        <div class="flex flex-col lg:flex-row gap-10 lg:gap-16">
+          <!-- Brand -->
+          <div class="lg:w-1/3 space-y-5">
+            <div class="flex items-center gap-3">
+              <div class="w-9 h-9 rounded-xl bg-neutral-900 flex items-center justify-center text-white">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24">
+                  <path fill="currentColor" d="M9.18 9.18c.054-.052.149-.118.451-.159c.323-.043.761-.044 1.439-.044h1.86c.678 0 1.116.001 1.438.044c.303.041.398.107.45.16c.054.053.12.148.16.45c.044.323.045.761.045 1.439v1.86c0 .678-.001 1.116-.045 1.438c-.04.303-.106.398-.16.45c-.052.054-.147.12-.45.16c-.322.044-.76.045-1.438.045h-1.86c-.678 0-1.116-.001-1.439-.045c-.302-.04-.397-.106-.45-.16c-.053-.052-.119-.147-.16-.45c-.043-.322-.044-.76-.044-1.438v-1.86c0-.678.001-1.116.044-1.439c.041-.302.107-.397.16-.45" opacity=".5"/>
+                  <path fill="currentColor" fill-rule="evenodd" d="M12.698 2.698a.698.698 0 0 0-1.396 0v2.79q-.764 0-1.395.017V2.698a.698.698 0 0 0-1.395 0v2.79q0 .056.008.108c-.936.115-1.585.353-2.078.846s-.731 1.142-.846 2.078a1 1 0 0 0-.108-.008h-2.79a.698.698 0 0 0 0 1.395h2.807q-.016.63-.016 1.395H2.698a.698.698 0 0 0 0 1.396h2.79q0 .764.017 1.395H2.698a.698.698 0 0 0 0 1.395h2.79a1 1 0 0 0 .108-.008c.115.936.353 1.585.846 2.078s1.142.731 2.078.846a1 1 0 0 0-.008.108v2.79a.698.698 0 0 0 1.395 0v-2.807q.63.016 1.395.016v2.791a.698.698 0 0 0 1.396 0v-2.79q.764 0 1.395-.017v2.807a.698.698 0 0 0 1.395 0v-2.79a1 1 0 0 0-.008-.108c.936-.115 1.585-.353 2.078-.846s.731-1.142.846-2.078q.053.009.108.008h2.79a.698.698 0 0 0 0-1.395h-2.807q.016-.63.016-1.395h2.791a.698.698 0 0 0 0-1.396h-2.79q0-.764-.017-1.395h2.807a.698.698 0 0 0 0-1.395h-2.79a1 1 0 0 0-.108.008c-.115-.936-.353-1.585-.846-2.078s-1.142-.731-2.078-.846a1 1 0 0 0 .008-.108v-2.79a.698.698 0 0 0-1.395 0v2.807a56 56 0 0 0-1.395-.016z" clip-rule="evenodd"/>
+                </svg>
+              </div>
+              <div class="flex flex-col">
+                <span class="text-sm font-semibold text-neutral-900 tracking-tight">start.agency</span>
+                <span class="text-[11px] uppercase text-neutral-400 tracking-[0.16em]">Start with design</span>
+              </div>
+            </div>
+            <p class="text-sm text-neutral-500 max-w-sm">We partner with startups on early stage and help them solve problems with efficient design.</p>
+            <div class="flex items-center gap-3 text-neutral-500">
+              <a href="#" class="w-8 h-8 rounded-full border border-neutral-200 flex items-center justify-center hover:border-neutral-400 hover:text-neutral-900 transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24">
+                  <path fill="currentColor" d="M14.234 10.162L22.977 0h-2.072l-7.591 8.824L7.251 0H.258l9.168 13.343L.258 24H2.33l8.016-9.318L16.749 24h6.993zm-2.837 3.299l-.929-1.329L3.076 1.56h3.182l5.965 8.532l.929 1.329l7.754 11.09h-3.182z"/>
+                </svg>
+              </a>
+              <a href="#" class="w-8 h-8 rounded-full border border-neutral-200 flex items-center justify-center hover:border-neutral-400 hover:text-neutral-900 transition-colors">
+                <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24">
+                  <path fill="currentColor" d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037c-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85c3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.06 2.06 0 0 1-2.063-2.065a2.064 2.064 0 1 1 2.063 2.065m1.782 13.019H3.555V9h3.564zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0z"/>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+          <!-- Links -->
+          <div class="flex-1 grid grid-cols-2 md:grid-cols-3 gap-8 text-sm">
+            <div class="space-y-3">
+              <h3 class="uppercase text-xs font-medium text-neutral-400 tracking-[0.16em]">Service</h3>
+              <ul class="space-y-2 text-neutral-600">
+                <li><a href="#" class="hover:text-neutral-900 transition-colors">Website design</a></li>
+                <li><a href="#" class="hover:text-neutral-900 transition-colors">Product design</a></li>
+                <li><a href="#" class="hover:text-neutral-900 transition-colors">Brand identity</a></li>
+                <li><a href="#" class="hover:text-neutral-900 transition-colors">Website development</a></li>
+              </ul>
+            </div>
+            <div class="space-y-3">
+              <h3 class="uppercase text-xs font-medium text-neutral-400 tracking-[0.16em]">Case studies</h3>
+              <ul class="space-y-2 text-neutral-600">
+                <li><a href="#" class="hover:text-neutral-900 transition-colors">Project 1</a></li>
+                <li><a href="#" class="hover:text-neutral-900 transition-colors">Project 2</a></li>
+                <li><a href="#" class="hover:text-neutral-900 transition-colors">Project 3</a></li>
+                <li><a href="#" class="hover:text-neutral-900 transition-colors">Project 4</a></li>
+              </ul>
+            </div>
+            <div class="space-y-3">
+              <h3 class="text-xs font-medium uppercase tracking-[0.16em] text-neutral-400">Company</h3>
+              <ul class="space-y-2 text-neutral-600">
+                <li><a href="#" class="hover:text-neutral-900 transition-colors">Studio</a></li>
+                <li><a href="#" class="hover:text-neutral-900 transition-colors">Clients</a></li>
+                <li><a href="#" class="hover:text-neutral-900 transition-colors">Careers</a></li>
+                <li><a href="#" class="hover:text-neutral-900 transition-colors">Contact</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bottom row -->
+        <div class="mt-10 border-t border-neutral-100 pt-6 flex flex-col gap-4">
+          <div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-3 text-xs text-neutral-400">
+            <p>© 2025 start.agency</p>
+            <div class="flex flex-wrap gap-4">
+              <a href="#" class="hover:text-neutral-700 transition-colors">Privacy Policy</a>
+              <a href="#" class="hover:text-neutral-700 transition-colors">Terms of Service</a>
+              <a href="#" class="hover:text-neutral-700 transition-colors">Data Processing</a>
+              <a href="#" class="hover:text-neutral-700 transition-colors">Cookie Settings</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Navigation -->
+    <div class="text-center py-8">
+      <div class="flex gap-4 justify-center">
+        <a href="webreference-min.html" class="px-6 py-3 border border-neutral-300 rounded-full hover:bg-white transition-colors">Back to Home</a>
+        <a href="webreference-services.html" class="px-6 py-3 bg-neutral-900 text-white rounded-full hover:bg-neutral-800 transition-colors">Services & Pricing</a>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

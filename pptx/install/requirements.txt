@@ -1,0 +1,19 @@
+# Python dependencies for PPTX skill scripts
+
+# Core PPTX manipulation
+python-pptx>=0.6.21
+
+# Image processing for thumbnails
+Pillow>=10.0.0
+
+# Markdown conversion (optional, for text extraction)
+markitdown[pptx]>=0.0.1a2
+
+# XML parsing (security-hardened)
+defusedxml>=0.7.1
+
+# OOXML validation
+lxml>=4.9.0
+
+# Utilities
+six>=1.16.0
