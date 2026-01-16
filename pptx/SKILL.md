@@ -242,8 +242,11 @@ p { font-size: 18pt; color: #F4F6F6; }
 ```javascript
 // create-presentation.js
 const pptxgen = require('pptxgenjs');
-const html2pptx = require('./scripts/html2pptx');
 const path = require('path');
+
+// Use SKILL_DIR environment variable to locate html2pptx module
+// This environment variable is automatically set by the skills connector
+const html2pptx = require(path.join(process.env.SKILL_DIR || __dirname, 'scripts', 'html2pptx'));
 
 async function main() {
   try {
